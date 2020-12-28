@@ -37,12 +37,13 @@ async function getGeo() {
     const res = await fetch (AQI);
     const searchAqi = await res.json();
 
-    //ERROR
+    //ERROR GEOLOCATION
 
-   // if ( searchAqi.status != 'ok') {
-     //   document.getElementById('error').textContent = 'Errore'
-    //} else {searchAqi.status}
-
+   if ( searchAqi.status != 'ok') {
+     document.getElementById('error').textContent = 'Geolocation error'
+    }
+    //
+    
     let aqiInfo = searchAqi.data.aqi;
 
     document.getElementById('aqi').textContent = aqiInfo;
@@ -87,13 +88,14 @@ const searchConsole = await response.json();
 
 console.log(searchConsole.status)
 
+//SEARCH ERROR
 
-if( searchConsole.status != 'ok') {
+if (searchConsole.status != 'ok') {
         document.getElementById('error').textContent = '*Sorry, there is no result for your search ' + `${search.value}`;
     } else if (searchConsole.status === 'ok'){
         document.getElementById('error').textContent = ''
     }
-
+//
 
 let lat = searchConsole.data.city.geo[0];
 let lon = searchConsole.data.city.geo[1];
@@ -109,7 +111,6 @@ document.getElementById('city').textContent = city;
 
 
 //AQI SEARCH
-
 
 const AQI = 'https://api.waqi.info/feed/geo:'+(lat)+';'+(lon)+'/?token=e62b46058561b2468f98f643a8fa4058ca390d28';
     const res = await fetch (AQI);

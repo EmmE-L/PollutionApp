@@ -219,14 +219,11 @@ color: #fff;
 
 }
 
-
 #error {
   font-size: 16px;
   color: #E83F37;
 
 }
-
-
 
 @media all and (max-width:800px) {
   body {
