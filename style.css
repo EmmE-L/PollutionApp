@@ -62,7 +62,7 @@ input {
 
 
 .image {
-    background: url('Sfondo.jpeg') no-repeat center center;
+    background: url('images/Sfondo.jpeg') no-repeat center center;
     background-size: cover;
     height: 100%;
     margin-bottom: -18px;
@@ -150,8 +150,6 @@ a.btn:hover {
 }
 
 #btnsearch {
-  background-image:url("search.png");
-  background-size: cover;
   background: rgba(0, 0, 0);
   color: #fff;
   padding: 0 30px;

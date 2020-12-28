@@ -1,7 +1,8 @@
-
 //MAP AND MARKER SET
 const mymap = L.map('map').setView([0, 0], 3);
 const marker = L.marker([41, 41]).addTo(mymap);
+const token = "e62b46058561b2468f98f643a8fa4058ca390d28"
+
 
 //MAP
 const attribution =  '&copy;  <a  href="http://openstreetmap.org/copyright">OpenStreetMap</a>  contributors'; 
@@ -108,6 +109,8 @@ mymap.setView([lat, lon], 8);
 document.getElementById('lat').textContent = 'Latitude: ' + lat;
 document.getElementById('lon').textContent = 'Longitude: ' + lon;
 document.getElementById('city').textContent = city;
+
+
 
 //AQI SEARCH
 
