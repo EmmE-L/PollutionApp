@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PollutionApp</title>
+    
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- LEAFLET CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/> 
+  
+    <!-- LEAFLET JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""> </script>
+
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+          <h2><a href="#"><i class="logo"></i>PollutionApp</a></h2>
+          <nav>
+            <ul>
+              <li>
+                <a class="btn" href="about.html" target=”_blank”> Air Quality Legend</a>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class=image>
+        <div class="cover">
+          <h1>Discover what's out there.</h1>
+          <div class="flex-form">
+            <label for="from">
+              <i class="ion-location"><img src="placeholder.png" alt=""></i>
+            </label>
+            <input id="citysearch" type="search" placeholder="Search any city">
+             <button id="btnsearch" value="Ricerca"> Search </button>
+          </div>
+          <p id="error"></p>
+          <p class="coordinate">
+            <span id="lat"></span><br>
+            <span id="lon"></span><br>
+            <p id="city"></p>
+           <p id="aqi"></p>
+        </div>
+        </p>
+        </div>
+      
+      </div>
+
+
+<div id='map'></div>
+
+<!--JS-->
+<script src="main.js"></script>
+    
+</body>
+</html>
