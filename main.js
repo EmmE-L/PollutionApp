@@ -71,7 +71,7 @@ async function getGeo() {
 
 }
 
-getGeo()
+getGeo() 
 
 });
 
