@@ -1,0 +1,292 @@
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+::-webkit-input-placeholder {
+  color: #56585b;
+}
+
+::-moz-placeholder {
+  color: #56585b;
+}
+
+:-moz-placeholder {
+  color: #56585b;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  color: #0a0a0b;
+  width: 100%;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: 'Lato', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+
+h2 {
+font-size: 30px;
+font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family:'Lato', sans-serif; ;
+  font-size: 18px;
+}
+
+input {
+
+  font-size: 18px;;
+
+}
+
+.coordinate {
+  font-family:'Lato', sans-serif; ;
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.image {
+    background: url('images/Sfondo.jpeg') no-repeat center center;
+    background-size: cover;
+    height: 100%;
+    margin-bottom: -18px;
+}
+
+ul, nav{
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+a:hover {
+  opacity: 1;
+}
+
+i {
+  font-size: 1.3rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  padding: 10px 100px 0;
+}
+
+header nav ul {
+  display: flex;
+}
+
+header nav li{
+  margin: 0 15px;
+}
+
+header nav li:first-child{
+  margin-left: 0; 
+}
+
+header nav li:last-child{
+  margin-right: 0;  
+}
+
+a.btn {
+  color: #fff;
+  padding: 10px;
+  border: 1px solid rgba(255,255,255,0.5);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+a.btn:hover {
+  background: #777;
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.cover  {
+  height: 100%;  
+  width: 100%;
+  background: -webkit-linear-gradient(top, rgba(0,0,0,0.05) 0%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(to bottom, rgba(0,0,0,0.05) 0%, rgba(0,0,0,0.5) 100%);
+  padding: 130px 0px 50px 0px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+#btnsearch {
+  background: rgba(0, 0, 0);
+  color: #fff;
+  padding: 0 30px;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+}
+
+
+#btnsearch:hover{
+  background: rgba(13, 14, 16, 0.6)
+}
+
+.flex-form {
+  display: -webkit-box;
+  display: flex;
+  z-index: 10;
+  position: relative;
+  width: 500px;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.flex-form > * {
+  border: 0;
+  padding: 0 0 0 10px;
+  background: #fff;
+  line-height: 50px;
+  font-size: 1rem;
+  border-radius: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+input[type="search"] {
+  flex-basis: 500px;
+}
+
+#map  {
+  width: 100%;
+  height: 400px;
+}
+
+#aqi {
+  font-size: 18px;
+  align-items: center;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px, solid;
+  border-radius: 10px;
+  color: #fff;
+  line-height: 32px;
+  text-shadow: 0px 0px 8px #000;
+
+}
+
+#city {
+text-align: center;
+color: #fff;
+
+}
+
+#error {
+  font-size: 16px;
+  color: #E83F37;
+
+}
+
+@media all and (max-width:800px) {
+  body {
+    font-size: 0,8rem;
+  }
+
+  .flex-form {
+    width: 100%;
+  }
+
+  input[type="search"] {
+    flex-basis: 100%;
+  }
+
+  .flex-form > * {
+    font-size: 0.9rem;
+  }
+
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    padding: 0px !important;
+  }
+
+  h2 {
+    font-size: 40px;
+    font-family: 'Oswald', sans-serif;
+    }
+
+  header h2 {
+    margin-bottom: 15px;
+  }
+
+
+  .cover {
+    padding-top: 140px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  #madeby {
+    padding: 30px 20px;
+  }
+}
+
+@media all and (max-width:360px) {
+  header nav li{
+    margin: 0 10px;
+  }
+
+  .flex-form {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+  }
+
+  input[type="search"] {
+    flex-basis: 0;
+  }
+
+  label {
+    display: none;
+  }
+}

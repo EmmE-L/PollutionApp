@@ -1,0 +1,5 @@
+*.env
+*.png
+*.jpeg
+*script.js
+node_modules/
