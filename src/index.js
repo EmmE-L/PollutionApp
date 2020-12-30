@@ -1,16 +1,9 @@
 import './style.css';
 
-//console.log(process.env.API_KEY);
-
-
 //MAP AND MARKER SET
 const mymap = L.map('map').setView([0, 0], 3);
 const marker = L.marker([41, 41]).addTo(mymap);
-//const token = "e62b46058561b2468f98f643a8fa4058ca390d28"
-const token = process.env.API_KEY
-console.log(process.env.API_KEY)
-
-
+const token = (process.env.API_KEY)
 
 //MAP
 const attribution =  '&copy;  <a  href="http://openstreetmap.org/copyright">OpenStreetMap</a>  contributors'; 
@@ -18,7 +11,7 @@ const  titleUrl  =  'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 var  titles  =  L.tileLayer(titleUrl,  {attribution}); 
 
 //WAQI MAP ICON
-var  WAQI_URL    =  'https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=' + process.env.API_KEY;  
+var  WAQI_URL    =  'https://tiles.waqi.info/tiles/usepa-aqi/{z}/{x}/{y}.png?token=' + token;  
       var  WAQI_ATTR  =  'Air  Quality  Tiles  &copy;  <a  href="http://waqi.info">waqi.info</a>';  
       var  waqiLayer  =  L.tileLayer(WAQI_URL,  {attribution:  WAQI_ATTR});  
 
