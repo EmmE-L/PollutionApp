@@ -10,6 +10,8 @@
 
 PollutionApp is a web app that allows all users to monitor the pollution level of their city with geolocation or through the input field you can search for a city and obtain information on air quality.<br>
 <br>
+PollutionApp uses an external Api Key, in particular that of aqicn.org.<br>
+<br>
 The app is divided into two sections, the first with geolocation.getCurrentPosition() geolocates the user by showing the pop up to allow activation.
 Latitude and longitude are shown with the getGeo() function.<br>
 <br>
