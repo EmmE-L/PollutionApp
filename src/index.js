@@ -20,7 +20,7 @@ titles.addTo(mymap);
 waqiLayer.addTo(mymap);
 
 //GEOLOCATION FUNCTION
-const geolcation = navigator.geolocation.getCurrentPosition(position => {
+const geolocation = navigator.geolocation.getCurrentPosition(position => {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
 
