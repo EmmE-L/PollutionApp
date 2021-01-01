@@ -1,6 +1,12 @@
   <h1 align="center">
-  PollutionApp
+    PollutionApp
   </h1>
+  <h3 align="center">
+      <img src="Images/PollutionApp.jpg" alt="Image" width="300" height="195">
+    <br>
+  <br>
+    <a href="https://counterapp-459a3.web.app/">Live Preview</a>
+  </h3>
 
 ## The Project
 
@@ -17,3 +23,9 @@ The functions are called through an event listener (addEventListener) which, acc
 
 * ```HTML```
 * ```CSS```
+* ```JAVASCRIPT```
+
+
+## Link
+
+Project Link: <a href="https://counterapp-459a3.web.app/">https://counterapp-459a3.web.app/</a>
