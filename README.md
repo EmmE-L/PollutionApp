@@ -4,19 +4,25 @@
   <h3 align="center">
       <img src="Images/PollutionApp.jpg" alt="Image" width="300" height="195">
     <br>
-  <br>
-    <a href="https://counterapp-459a3.web.app/">Live Preview</a>
   </h3>
 
 ## The Project
 
-CounterApp is a simple counter program that increases and decreases the number based on the user's selection.
+PollutionApp is a web app that allows all users to monitor the pollution level of their city with geolocation or through the input field you can search for a city and obtain information on air quality.<br>
+<br>
+The app is divided into two sections, the first with geolocation.getCurrentPosition () geolocates the user by showing the pop up to allow activation.
+Latitude and longitude are shown with the getGeo () function.<br>
+<br>
+The second section was developed to allow the user to search for a city. The search function searchName () generates the coordinates of the city entered and shows the relative pollution levels. The AQI indexes are integrated through the JSON API provided by the AQICN site.<br>
+<br>
+If a searched city is not available with the searchAqi.status an error code is shown.
+<br>
+
+The map uses the Leaflet JS library.
 <br>
 <br>
-The program begins by defining the functions myUpFunction() and myDownFunction() to increase and decrease the number set in the variable.
-<br>
-<br>
-The functions are called through an event listener (addEventListener) which, according to the button clicked by the user, increases or decreases the displayed number.
+
+The .env file is used to set the API key in an environment variable.
 
 
 ## Built With
@@ -24,8 +30,4 @@ The functions are called through an event listener (addEventListener) which, acc
 * ```HTML```
 * ```CSS```
 * ```JAVASCRIPT```
-
-
-## Link
-
-Project Link: <a href="https://counterapp-459a3.web.app/">https://counterapp-459a3.web.app/</a>
+* ```.ENV```
