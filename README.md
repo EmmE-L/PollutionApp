@@ -17,11 +17,8 @@ The second section was developed to allow the user to search for a city. The sea
 <br>
 If a searched city is not available with the searchAqi.status an error code is shown.
 <br>
-
 The map uses the Leaflet JS library.
 <br>
-<br>
-
 The .env file is used to set the API key in an environment variable.
 
 
