@@ -1,7 +1,5 @@
 *.env
 *.json
-package-lock.json/
+dist/
 node_modules/
-package-lock.json
-package-lock.json/
-webpack.config.js
+
