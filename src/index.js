@@ -80,7 +80,7 @@ getGeo()
 });
 
 
-// INPUT SEARCH FUNCTION
+//INPUT SEARCH FUNCTION
 
 async function searchName() {
 
