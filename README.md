@@ -6,8 +6,6 @@
   <br>
   https://www.ipersito.it/PollutionApp/
   <br>
-
-    <br>
   </h3>
 
 ## The Project
